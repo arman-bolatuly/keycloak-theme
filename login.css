@@ -7,11 +7,11 @@
 .login-pf body {
     background: url("../img/keycloak-bg.png") no-repeat center left;
     background-size: 60% 100%;
-    height: auto;
     display: flex;
     width: 40%;
     float: right;
     justify-content: center;
+    height: auto;
 }
 
 .background: {
@@ -29,7 +29,37 @@
 
 textarea.pf-c-form-control {
 	height: auto;
+	border: green;
+	border-radius: 5px;
+	font-size: 10px;
 }
+
+.pf-c-form-control:not(textarea) {
+    height: auto;
+    text-overflow: ellipsis;
+}
+
+.pf-c-form-control {
+	height: auto;
+	border: 1px solid lightgray;
+	border-radius: 3px;
+	font-size: 10px;
+}
+
+.pf-c-form-control:hover {
+	height: auto;
+	border: 1px solid blue;
+	border-radius: 3px;
+	font-size: 10px;
+}
+
+.pf-c-form-control:focus {
+	height: auto;
+	border-radius: 3px;
+	background: white;
+	font-size: 10px;
+}
+
 
 .pf-c-alert__title {
     font-size: var(--pf-global--FontSize--xs);
@@ -562,9 +592,9 @@ ul#kc-totp-supported-apps {
     margin-bottom: 5px;
 }
 
-.card-pf {
+#card-pf {
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 50px;
     max-width: 500px;
 }
 
@@ -677,3 +707,13 @@ ul#kc-totp-supported-apps {
     border-radius: 8px;
 }
 /* End Recovery codes */
+
+@media (max-width: 500px) {
+    #card-pf {
+    	padding: 10px 0px;
+    	margin: 0 auto;
+    	background: #fff;
+    	max-width: 500px;
+	}
+}
+
