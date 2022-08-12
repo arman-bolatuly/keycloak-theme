@@ -18,9 +18,9 @@
             <form id="kc-form-login" onsubmit="login.disabled = true; return true;" action="${url.loginAction}" method="post">
                 <#if !usernameHidden??>
                     <div class="${properties.kcFormGroupClass!}">
-                        <label for="username" class="${properties.kcLabelClass!}" placeholder="E-mail">${msg("email")}</label>
+                        <label for="username" class="${properties.kcLabelClass!}">${msg("email")}</label>
 
-                        <input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}"  type="text" autofocus autocomplete="off"
+                        <input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}"  type="text" autofocus autocomplete="off" placeholder="E-mail"
                                aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>"
                         />
 
@@ -34,9 +34,9 @@
                 </#if>
 
                 <div class="${properties.kcFormGroupClass!}">
-                    <label for="password" class="${properties.kcLabelClass!}" placeholder="пароль">${msg("password")}</label>
+                    <label for="password" class="${properties.kcLabelClass!}" >${msg("password")}</label>
 
-                    <input tabindex="2" id="password" class="${properties.kcInputClass!}" name="password" type="password" autocomplete="off"
+                    <input tabindex="2" id="password" class="${properties.kcInputClass!}" name="password" type="password" autocomplete="off" placeholder="Пароль"
                            aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>"
                     />
 
