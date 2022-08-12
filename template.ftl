@@ -39,7 +39,8 @@
 <body class="${properties.kcBodyClass!}">
 <div class="${properties.kcLoginClass!}">
     
-    <div class="${properties.kcFormCardClass!}">
+
+    <div id="card-pf">
         <header class="${properties.kcFormHeaderClass!}">
             <#if realm.internationalizationEnabled  && locale.supported?size gt 1>
                 <div class="${properties.kcLocaleMainClass!}" id="kc-locale">
