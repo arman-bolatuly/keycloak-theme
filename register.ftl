@@ -13,7 +13,7 @@
                     <label for="firstName" class="${properties.kcLabelClass!}">Фамилия</label>
                 </div>
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input type="text" id="firstName" class="${properties.kcInputClass!}" name="firstName" placeholder="Фамилия"
+                    <input type="text" id="firstName" class="${properties.kcInputClass!}" name="firstName"
                            value="${(register.formData.firstName!'')}"
                            aria-invalid="<#if messagesPerField.existsError('firstName')>true</#if>"
                     />
@@ -31,7 +31,7 @@
                     <label for="lastName" class="${properties.kcLabelClass!}">Имя</label>
                 </div>
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input type="text" id="lastName" class="${properties.kcInputClass!}" name="lastName" placeholder="Имя"
+                    <input type="text" id="lastName" class="${properties.kcInputClass!}" name="lastName"
                            value="${(register.formData.lastName!'')}"
                            aria-invalid="<#if messagesPerField.existsError('lastName')>true</#if>"
                     />
@@ -49,7 +49,7 @@
                     <label for="email" class="${properties.kcLabelClass!}">E-mail</label>
                 </div>
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input type="text" id="email" class="${properties.kcInputClass!}" name="email" placeholder="E-mail"
+                    <input type="text" id="email" class="${properties.kcInputClass!}" name="email"
                            value="${(register.formData.email!'')}" autocomplete="email"
                            aria-invalid="<#if messagesPerField.existsError('email')>true</#if>"
                     />
@@ -68,7 +68,7 @@
                         <label for="username" class="${properties.kcLabelClass!}">Ник пользователя</label>
                     </div>
                     <div class="${properties.kcInputWrapperClass!}">
-                        <input type="text" id="username" class="${properties.kcInputClass!}" name="username" placeholder="Ник пользователя"
+                        <input type="text" id="username" class="${properties.kcInputClass!}" name="username"
                                value="${(register.formData.username!'')}" autocomplete="username"
                                aria-invalid="<#if messagesPerField.existsError('username')>true</#if>"
                         />
@@ -88,7 +88,7 @@
                         <label for="password" class="${properties.kcLabelClass!}">Пароль</label>
                     </div>
                     <div class="${properties.kcInputWrapperClass!}">
-                        <input type="password" id="password" class="${properties.kcInputClass!}" name="password" placeholder="Пароль"
+                        <input type="password" id="password" class="${properties.kcInputClass!}" name="password"
                                autocomplete="new-password"
                                aria-invalid="<#if messagesPerField.existsError('password','password-confirm')>true</#if>"
                         />
@@ -108,7 +108,7 @@
                     </div>
                     <div class="${properties.kcInputWrapperClass!}">
                         <input type="password" id="password-confirm" class="${properties.kcInputClass!}"
-                               name="password-confirm" placeholder="Повторите пароль"
+                               name="password-confirm"
                                aria-invalid="<#if messagesPerField.existsError('password-confirm')>true</#if>"
                         />
 
