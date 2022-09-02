@@ -1,6 +1,7 @@
 /* Patternfly CSS places a "bg-login.jpg" as the background on this ".login-pf" class.
    This clashes with the "keycloak-bg.png' background defined on the body below.
    Therefore the Patternfly background must be set to none. */
+
 .login-pf {
     background: none;
 }
@@ -12,6 +13,7 @@
     float: right;
     justify-content: center;
     height: auto;
+    font-size: 16px;
 }
 
 .background: {
@@ -28,36 +30,36 @@
 }
 
 textarea.pf-c-form-control {
-	height: auto;
+	height: 35px;
 	border: green;
 	border-radius: 5px;
-	font-size: 10px;
+	font-size: 14px;
 }
 
 .pf-c-form-control:not(textarea) {
-    height: auto;
+    height: 35px;
     text-overflow: ellipsis;
 }
 
 .pf-c-form-control {
-	height: auto;
+	height: 35px;
 	border: 1px solid lightgray;
 	border-radius: 3px;
-	font-size: 10px;
+	font-size: 14px;
 }
 
 .pf-c-form-control:hover {
-	height: auto;
+	height: 35px;
 	border: 1px solid blue;
 	border-radius: 3px;
-	font-size: 10px;
+	font-size: 14px;
 }
 
 .pf-c-form-control:focus {
-	height: auto;
+	height: 35px;
 	border-radius: 3px;
 	background: white;
-	font-size: 10px;
+	font-size: 14px;
 }
 
 
@@ -138,7 +140,7 @@ div.kc-logo-text span {
 #pl-header2 {
     font-size: 16px;
     padding-top: 2px;
-    padding-bottom: 2px;
+    padding-bottom: 5px;
 }
 
 
@@ -158,12 +160,14 @@ div.kc-logo-text span {
     white-space: normal;
 }
 
-
 #kc-content {
     display: flex;
     justify-content: center;
     width: auto;
-    
+}
+
+#label {
+font-size: 16px;
 }
 
 #kc-attempted-username {
@@ -224,13 +228,15 @@ div.kc-logo-text span {
 }
 
 #kc-info-wrapper {
-    font-size: 13px;
+    font-size: 14px;
     background-color: #FFF;
     justify-content: space-between;
 }
 
 #kc-form-options span {
     display: block;
+    font-size: 14px;
+    margin-top: 8px;
 }
 
 #kc-form-options .checkbox {
@@ -420,7 +426,7 @@ ul#kc-totp-supported-apps {
     } 
 
     #pl-header2 {
-       font-size: 13px;
+       font-size: 15px;
     }
 }
 
@@ -510,7 +516,7 @@ ul#kc-totp-supported-apps {
     } 
 
     #pl-header2 {
-       font-size: 13px;
+       font-size: 15px;
     }
 }
 
@@ -594,6 +600,7 @@ ul#kc-totp-supported-apps {
 
 #card-pf {
     margin: 0 auto;
+    margin-top: 60px;
     padding: 0 50px;
     max-width: 500px;
 }
@@ -716,4 +723,3 @@ ul#kc-totp-supported-apps {
     	max-width: 500px;
 	}
 }
-
